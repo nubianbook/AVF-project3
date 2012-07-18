@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA82FCB915B101D7009CB666 /* avf_pt2.mov in Resources */ = {isa = PBXBuildFile; fileRef = EA82FCB815B101D7009CB666 /* avf_pt2.mov */; };
+		EAEFD1BC15A2104D003B0544 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEFD1BB15A2104D003B0544 /* Foundation.framework */; };
+		EAEFD1BE15A2104D003B0544 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEFD1BD15A2104D003B0544 /* UIKit.framework */; };
+		EAEFD1C015A2104D003B0544 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEFD1BF15A2104D003B0544 /* CoreGraphics.framework */; };
+		EAEFD1C215A2104D003B0544 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEFD1C115A2104D003B0544 /* AddressBook.framework */; };
+		EAEFD1C415A2104D003B0544 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEFD1C315A2104D003B0544 /* AddressBookUI.framework */; };
+		EAEFD1C615A2104D003B0544 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEFD1C515A2104D003B0544 /* AudioToolbox.framework */; };
+		EAEFD1C815A2104D003B0544 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEFD1C715A2104D003B0544 /* AVFoundation.framework */; };
+		EAEFD1CA15A2104D003B0544 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEFD1C915A2104D003B0544 /* CoreLocation.framework */; };
+		EAEFD1CC15A2104D003B0544 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEFD1CB15A2104D003B0544 /* MediaPlayer.framework */; };
+		EAEFD1CE15A2104D003B0544 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEFD1CD15A2104D003B0544 /* QuartzCore.framework */; };
+		EAEFD1D015A2104D003B0544 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEFD1CF15A2104D003B0544 /* SystemConfiguration.framework */; };
+		EAEFD1D215A2104D003B0544 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEFD1D115A2104D003B0544 /* MobileCoreServices.framework */; };
+		EAEFD1D415A2104D003B0544 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEFD1D315A2104D003B0544 /* CoreMedia.framework */; };
+		EAEFD1DA15A2104D003B0544 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAEFD1D815A2104D003B0544 /* InfoPlist.strings */; };
+		EAEFD1DC15A2104D003B0544 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEFD1DB15A2104D003B0544 /* main.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EAEFD1DF15A2104D003B0544 /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEFD1DE15A2104D003B0544 /* Cordova.framework */; };
+		EAEFD1E415A2104D003B0544 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAEFD1E215A2104D003B0544 /* Localizable.strings */; };
+		EAEFD1E815A2104D003B0544 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAEFD1E615A2104D003B0544 /* Localizable.strings */; };
+		EAEFD1EC15A2104D003B0544 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAEFD1EA15A2104D003B0544 /* Localizable.strings */; };
+		EAEFD1F015A2104D003B0544 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAEFD1EE15A2104D003B0544 /* Localizable.strings */; };
+		EAEFD1F315A2104D003B0544 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEFD1F215A2104D003B0544 /* icon.png */; };
+		EAEFD1F515A2104E003B0544 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEFD1F415A2104E003B0544 /* icon@2x.png */; };
+		EAEFD1F715A2104E003B0544 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEFD1F615A2104E003B0544 /* icon-72.png */; };
+		EAEFD1FA15A2104E003B0544 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEFD1F915A2104E003B0544 /* Default~iphone.png */; };
+		EAEFD1FC15A2104E003B0544 /* Default@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEFD1FB15A2104E003B0544 /* Default@2x~iphone.png */; };
+		EAEFD1FE15A2104E003B0544 /* Capture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EAEFD1FD15A2104E003B0544 /* Capture.bundle */; };
+		EAEFD20015A2104E003B0544 /* Cordova.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAEFD1FF15A2104E003B0544 /* Cordova.plist */; };
+		EAEFD20415A2104E003B0544 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEFD20315A2104E003B0544 /* AppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EAEFD20715A2104E003B0544 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEFD20615A2104E003B0544 /* MainViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EAEFD20915A2104E003B0544 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAEFD20815A2104E003B0544 /* MainViewController.xib */; };
+		EAEFD21315A21144003B0544 /* www in Resources */ = {isa = PBXBuildFile; fileRef = EAEFD21215A21144003B0544 /* www */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA82FCB815B101D7009CB666 /* avf_pt2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = avf_pt2.mov; sourceTree = "<group>"; };
+		EAEFD1B715A2104D003B0544 /* new_Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = new_Home.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAEFD1BB15A2104D003B0544 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EAEFD1BD15A2104D003B0544 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EAEFD1BF15A2104D003B0544 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EAEFD1C115A2104D003B0544 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		EAEFD1C315A2104D003B0544 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		EAEFD1C515A2104D003B0544 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EAEFD1C715A2104D003B0544 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EAEFD1C915A2104D003B0544 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EAEFD1CB15A2104D003B0544 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		EAEFD1CD15A2104D003B0544 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EAEFD1CF15A2104D003B0544 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EAEFD1D115A2104D003B0544 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		EAEFD1D315A2104D003B0544 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		EAEFD1D715A2104D003B0544 /* new_Home-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "new_Home-Info.plist"; sourceTree = "<group>"; };
+		EAEFD1D915A2104D003B0544 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAEFD1DB15A2104D003B0544 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAEFD1DD15A2104D003B0544 /* new_Home-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "new_Home-Prefix.pch"; sourceTree = "<group>"; };
+		EAEFD1DE15A2104D003B0544 /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = /Users/Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<absolute>"; };
+		EAEFD1E315A2104D003B0544 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EAEFD1E715A2104D003B0544 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Resources/es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EAEFD1EB15A2104D003B0544 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Resources/de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EAEFD1EF15A2104D003B0544 /* se */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = se; path = Resources/se.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EAEFD1F215A2104D003B0544 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icons/icon.png; sourceTree = "<group>"; };
+		EAEFD1F415A2104E003B0544 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/icons/icon@2x.png"; sourceTree = "<group>"; };
+		EAEFD1F615A2104E003B0544 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72.png"; path = "Resources/icons/icon-72.png"; sourceTree = "<group>"; };
+		EAEFD1F915A2104E003B0544 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default~iphone.png"; path = "Resources/splash/Default~iphone.png"; sourceTree = "<group>"; };
+		EAEFD1FB15A2104E003B0544 /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x~iphone.png"; path = "Resources/splash/Default@2x~iphone.png"; sourceTree = "<group>"; };
+		EAEFD1FD15A2104E003B0544 /* Capture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Capture.bundle; path = Resources/Capture.bundle; sourceTree = "<group>"; };
+		EAEFD1FF15A2104E003B0544 /* Cordova.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cordova.plist; sourceTree = "<group>"; };
+		EAEFD20215A2104E003B0544 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		EAEFD20315A2104E003B0544 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		EAEFD20515A2104E003B0544 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
+		EAEFD20615A2104E003B0544 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
+		EAEFD20815A2104E003B0544 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
+		EAEFD20B15A2104E003B0544 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		EAEFD20C15A2104E003B0544 /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
+		EAEFD21215A21144003B0544 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAEFD1B115A2104D003B0544 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAEFD1BC15A2104D003B0544 /* Foundation.framework in Frameworks */,
+				EAEFD1BE15A2104D003B0544 /* UIKit.framework in Frameworks */,
+				EAEFD1C015A2104D003B0544 /* CoreGraphics.framework in Frameworks */,
+				EAEFD1C215A2104D003B0544 /* AddressBook.framework in Frameworks */,
+				EAEFD1C415A2104D003B0544 /* AddressBookUI.framework in Frameworks */,
+				EAEFD1C615A2104D003B0544 /* AudioToolbox.framework in Frameworks */,
+				EAEFD1C815A2104D003B0544 /* AVFoundation.framework in Frameworks */,
+				EAEFD1CA15A2104D003B0544 /* CoreLocation.framework in Frameworks */,
+				EAEFD1CC15A2104D003B0544 /* MediaPlayer.framework in Frameworks */,
+				EAEFD1CE15A2104D003B0544 /* QuartzCore.framework in Frameworks */,
+				EAEFD1D015A2104D003B0544 /* SystemConfiguration.framework in Frameworks */,
+				EAEFD1D215A2104D003B0544 /* MobileCoreServices.framework in Frameworks */,
+				EAEFD1D415A2104D003B0544 /* CoreMedia.framework in Frameworks */,
+				EAEFD1DF15A2104D003B0544 /* Cordova.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAEFD1B415A2104D003B0544 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAEFD1A915A2104D003B0544 = {
+			isa = PBXGroup;
+			children = (
+				EAEFD21215A21144003B0544 /* www */,
+				EAEFD1D515A2104D003B0544 /* new_Home */,
+				EAEFD1BA15A2104D003B0544 /* Frameworks */,
+				EAEFD1B815A2104D003B0544 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAEFD1B815A2104D003B0544 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAEFD1B715A2104D003B0544 /* new_Home.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAEFD1BA15A2104D003B0544 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAEFD1BB15A2104D003B0544 /* Foundation.framework */,
+				EAEFD1BD15A2104D003B0544 /* UIKit.framework */,
+				EAEFD1BF15A2104D003B0544 /* CoreGraphics.framework */,
+				EAEFD1C115A2104D003B0544 /* AddressBook.framework */,
+				EAEFD1C315A2104D003B0544 /* AddressBookUI.framework */,
+				EAEFD1C515A2104D003B0544 /* AudioToolbox.framework */,
+				EAEFD1C715A2104D003B0544 /* AVFoundation.framework */,
+				EAEFD1C915A2104D003B0544 /* CoreLocation.framework */,
+				EAEFD1CB15A2104D003B0544 /* MediaPlayer.framework */,
+				EAEFD1CD15A2104D003B0544 /* QuartzCore.framework */,
+				EAEFD1CF15A2104D003B0544 /* SystemConfiguration.framework */,
+				EAEFD1D115A2104D003B0544 /* MobileCoreServices.framework */,
+				EAEFD1D315A2104D003B0544 /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAEFD1D515A2104D003B0544 /* new_Home */ = {
+			isa = PBXGroup;
+			children = (
+				EAEFD1DE15A2104D003B0544 /* Cordova.framework */,
+				EAEFD1E015A2104D003B0544 /* Resources */,
+				EAEFD20115A2104E003B0544 /* Classes */,
+				EAEFD20A15A2104E003B0544 /* Plugins */,
+				EAEFD1D615A2104D003B0544 /* Supporting Files */,
+			);
+			path = new_Home;
+			sourceTree = "<group>";
+		};
+		EAEFD1D615A2104D003B0544 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAEFD1D715A2104D003B0544 /* new_Home-Info.plist */,
+				EAEFD1D815A2104D003B0544 /* InfoPlist.strings */,
+				EAEFD1DB15A2104D003B0544 /* main.m */,
+				EAEFD1DD15A2104D003B0544 /* new_Home-Prefix.pch */,
+				EAEFD1FF15A2104E003B0544 /* Cordova.plist */,
+				EAEFD20815A2104E003B0544 /* MainViewController.xib */,
+				EAEFD20C15A2104E003B0544 /* verify.sh */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAEFD1E015A2104D003B0544 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA82FCB815B101D7009CB666 /* avf_pt2.mov */,
+				EAEFD1FD15A2104E003B0544 /* Capture.bundle */,
+				EAEFD1E115A2104D003B0544 /* en.lproj */,
+				EAEFD1E515A2104D003B0544 /* es.lproj */,
+				EAEFD1E915A2104D003B0544 /* de.lproj */,
+				EAEFD1ED15A2104D003B0544 /* se.lproj */,
+				EAEFD1F115A2104D003B0544 /* icons */,
+				EAEFD1F815A2104E003B0544 /* splash */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EAEFD1E115A2104D003B0544 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				EAEFD1E215A2104D003B0544 /* Localizable.strings */,
+			);
+			name = en.lproj;
+			sourceTree = "<group>";
+		};
+		EAEFD1E515A2104D003B0544 /* es.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				EAEFD1E615A2104D003B0544 /* Localizable.strings */,
+			);
+			name = es.lproj;
+			sourceTree = "<group>";
+		};
+		EAEFD1E915A2104D003B0544 /* de.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				EAEFD1EA15A2104D003B0544 /* Localizable.strings */,
+			);
+			name = de.lproj;
+			sourceTree = "<group>";
+		};
+		EAEFD1ED15A2104D003B0544 /* se.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				EAEFD1EE15A2104D003B0544 /* Localizable.strings */,
+			);
+			name = se.lproj;
+			sourceTree = "<group>";
+		};
+		EAEFD1F115A2104D003B0544 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				EAEFD1F215A2104D003B0544 /* icon.png */,
+				EAEFD1F415A2104E003B0544 /* icon@2x.png */,
+				EAEFD1F615A2104E003B0544 /* icon-72.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		EAEFD1F815A2104E003B0544 /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				EAEFD1F915A2104E003B0544 /* Default~iphone.png */,
+				EAEFD1FB15A2104E003B0544 /* Default@2x~iphone.png */,
+			);
+			name = splash;
+			sourceTree = "<group>";
+		};
+		EAEFD20115A2104E003B0544 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EAEFD20215A2104E003B0544 /* AppDelegate.h */,
+				EAEFD20315A2104E003B0544 /* AppDelegate.m */,
+				EAEFD20515A2104E003B0544 /* MainViewController.h */,
+				EAEFD20615A2104E003B0544 /* MainViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		EAEFD20A15A2104E003B0544 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				EAEFD20B15A2104E003B0544 /* README */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAEFD1B615A2104D003B0544 /* new_Home */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAEFD20F15A2104E003B0544 /* Build configuration list for PBXNativeTarget "new_Home" */;
+			buildPhases = (
+				EAEFD1B015A2104D003B0544 /* Sources */,
+				EAEFD1B115A2104D003B0544 /* Frameworks */,
+				EAEFD1B215A2104D003B0544 /* Resources */,
+				EAEFD1B315A2104D003B0544 /* Sources */,
+				EAEFD1B415A2104D003B0544 /* Frameworks */,
+				EAEFD1B515A2104D003B0544 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = new_Home;
+			productName = new_Home;
+			productReference = EAEFD1B715A2104D003B0544 /* new_Home.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAEFD1AB15A2104D003B0544 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Apple Inc.";
+			};
+			buildConfigurationList = EAEFD1AE15A2104D003B0544 /* Build configuration list for PBXProject "new_Home" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				es,
+				de,
+				se,
+			);
+			mainGroup = EAEFD1A915A2104D003B0544;
+			productRefGroup = EAEFD1B815A2104D003B0544 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAEFD1B615A2104D003B0544 /* new_Home */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAEFD1B215A2104D003B0544 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAEFD1DA15A2104D003B0544 /* InfoPlist.strings in Resources */,
+				EAEFD1E415A2104D003B0544 /* Localizable.strings in Resources */,
+				EAEFD1E815A2104D003B0544 /* Localizable.strings in Resources */,
+				EAEFD1EC15A2104D003B0544 /* Localizable.strings in Resources */,
+				EAEFD1F015A2104D003B0544 /* Localizable.strings in Resources */,
+				EAEFD1F315A2104D003B0544 /* icon.png in Resources */,
+				EAEFD1F515A2104E003B0544 /* icon@2x.png in Resources */,
+				EAEFD1F715A2104E003B0544 /* icon-72.png in Resources */,
+				EAEFD1FA15A2104E003B0544 /* Default~iphone.png in Resources */,
+				EAEFD1FC15A2104E003B0544 /* Default@2x~iphone.png in Resources */,
+				EAEFD1FE15A2104E003B0544 /* Capture.bundle in Resources */,
+				EAEFD20015A2104E003B0544 /* Cordova.plist in Resources */,
+				EAEFD20915A2104E003B0544 /* MainViewController.xib in Resources */,
+				EAEFD21315A21144003B0544 /* www in Resources */,
+				EA82FCB915B101D7009CB666 /* avf_pt2.mov in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EAEFD1B515A2104D003B0544 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\n\t\t\t\t\t\t\t\tchmod 755 \"$PROJECT_DIR/$PROJECT_NAME/verify.sh\"\n\t\t\t\t\t\t\t\t\"$PROJECT_DIR/$PROJECT_NAME/verify.sh\"\n\t\t\t\t\t";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAEFD1B015A2104D003B0544 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAEFD1DC15A2104D003B0544 /* main.m in Sources */,
+				EAEFD20415A2104E003B0544 /* AppDelegate.m in Sources */,
+				EAEFD20715A2104E003B0544 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAEFD1B315A2104D003B0544 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EAEFD1D815A2104D003B0544 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAEFD1D915A2104D003B0544 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EAEFD1E215A2104D003B0544 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAEFD1E315A2104D003B0544 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		EAEFD1E615A2104D003B0544 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAEFD1E715A2104D003B0544 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		EAEFD1EA15A2104D003B0544 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAEFD1EB15A2104D003B0544 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		EAEFD1EE15A2104D003B0544 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAEFD1EF15A2104D003B0544 /* se */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAEFD20D15A2104E003B0544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EAEFD20E15A2104E003B0544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAEFD21015A2104E003B0544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Users/Shared/Cordova/Frameworks;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "new_Home/new_Home-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1,",
+					"CORDOVA_FRAMEWORK=1",
+				);
+				INFOPLIST_FILE = "new_Home/new_Home-Info.plist";
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak-lSystem",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EAEFD21115A2104E003B0544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = /Users/Shared/Cordova/Frameworks;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "new_Home/new_Home-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1,",
+					"CORDOVA_FRAMEWORK=1",
+				);
+				INFOPLIST_FILE = "new_Home/new_Home-Info.plist";
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak-lSystem",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAEFD1AE15A2104D003B0544 /* Build configuration list for PBXProject "new_Home" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAEFD20D15A2104E003B0544 /* Debug */,
+				EAEFD20E15A2104E003B0544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAEFD20F15A2104E003B0544 /* Build configuration list for PBXNativeTarget "new_Home" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAEFD21015A2104E003B0544 /* Debug */,
+				EAEFD21115A2104E003B0544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAEFD1AB15A2104D003B0544 /* Project object */;
+}

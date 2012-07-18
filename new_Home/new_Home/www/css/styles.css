@@ -1,0 +1,60 @@
+
+
+body {
+      width: 1024;
+      margin: 0 auto;
+}
+
+#contentlist {
+              padding: 2px 0 0 10px;
+}
+
+#header {
+         
+          color: black;
+}
+
+#footer {
+          padding: 10px 0 0 10px;
+ }         color: white;
+                 
+#logo {
+        display: inline;
+        margin: 0 0 0 0;
+}
+
+#pics {
+        margin: 20px 0 0 0;
+
+}
+
+#search_homes {
+               margin: 0 12px 0 12px;
+
+}
+ 
+#map_canvas{
+            width: 100%;
+            height:680px;
+            margin: 0 auto;
+}
+
+#video {
+         display: block;
+         margin-bottom: 12px;
+}
+
+#video  {
+  		 -webkit-column-span: all;
+  		 -moz-column-span: all;
+  		  column-span: all;
+  		  clear:both;
+}
+
+#canvasOverlay  {
+				  position:absolute;
+				  top:0px;
+				  left:0px;
+				  background-color: transparent;
+				  margin-bottom:25px;
+} 

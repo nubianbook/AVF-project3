@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <!--
+     #
+     # Licensed to the Apache Software Foundation (ASF) under one
+     # or more contributor license agreements.  See the NOTICE file
+     # distributed with this work for additional information
+     # regarding copyright ownership.  The ASF licenses this file
+     # to you under the Apache License, Version 2.0 (the
+     # "License"); you may not use this file except in compliance
+     # with the License.  You may obtain a copy of the License at
+     # 
+     # http://www.apache.org/licenses/LICENSE-2.0
+     # 
+     # Unless required by applicable law or agreed to in writing,
+     # software distributed under the License is distributed on an
+     # "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     #  KIND, either express or implied.  See the License for the
+     # specific language governing permissions and limitations
+     # under the License.
+     #
+     -->
+    <head>
+        <meta charset="utf-8">
+            
+            <title>No Home Alone</title>
+            
+            <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+            <meta name="HandheldFriendly" content="True">
+                <meta name="MobileOptimized" content="320"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    
+                    <!-- Mobile IE needs ClearType for smoothing fonts -->
+                    <meta http-equiv="cleartype" content="on">
+                        <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+                        <script src="js/modernizr.custom.min.js"></script>
+                        <script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"></script>
+                        
+                        
+                        <!-- iPad/iPhone specific css below, add after your main css -->
+                        <link rel="stylesheet" href="jquery/jquery.mobile-1.1.0.min.css" type="text/css" />
+                        <link rel="stylesheet" href="css/screen.css" type="text/css" />
+                        <link rel="stylesheet" href="css/styles.css" type="text/css" />
+                        
+                        
+    </head>
+    
+    
+    <body> 
+        
+        <section id="home" data-role="page" data-position="fixed" align="center" data-add-back-btn="true">
+            
+            <header data-role="header" id="header" data-theme="c">
+                <img src="images/home_logo.png" id="logo"><br />
+                    Home Plate
+                    </header>
+            
+            <nav data-role="navbar" id="navbar">
+                <ul>
+                    <li><a href="#home" data-theme="a" class="ui-btn-active">Home</a></li>
+                    <li><a href="#gallery" data-theme="a">Gallery</a></li>
+                    <li><a href="#map-page" data-theme="a">Map</a></li>
+                    <li><a href="#media" data-theme="a">Media</a></li>
+                </ul>
+            </nav>
+            
+            <div data-role="content" class="content">
+                
+                <ul data-role="controlgroup" id="pics">
+                    <li><a href="#buy_gallery"><img src="images/cta_pic1.png" data-role="button" data-inline="true"></a></li>
+                    <li><a href="#rent_gallery"><img src="images/cta_pic2.png" data-role="button" data-inline="true"></a></li>
+                </ul>
+                 <p><a href="#" onclick="showAlert(); return false;">Show Alert</a></p>
+                
+            </div> <!-- end of cta-div -->
+            
+            <div align="left" id="search_homes">
+                <label for="search">Search Homes:</label>
+                <input type="search" name="search_homes" />
+            </div>  <!-- end of pg1 searchbox -->
+            
+            <footer data-role="footer" id="footer" data-position="fixed">
+                
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#">App Info</a></li>
+                        <li><a href="#">Map</a></li>
+                        <li><a href="#myLikes">My Likes</a></li>
+                    </ul>
+                </div> <!-- end of footer navbar div -->
+                
+            </footer>
+            
+        </section>
+        
+        <!-- end of home section --> 
+        
+        <!-- beginning of gallery -->
+        
+        <section id="gallery" data-role="page" data-position="fixed" data-add-back-btn="true">
+            
+            <header data-role="header" id="header" data-theme="c" align="center">
+                <img src="images/home_logo.png" id="logo"><br />
+                    The Accelerometer
+                    </header>
+            
+            <nav data-role="navbar" id="navbar">
+                <ul>
+                    <li><a href="#home" data-theme="a">Home</a></li>
+                    <li><a href="#gallery" data-theme="a" class="ui-btn-active">Gallery</a></li>
+                    <li><a href="#map-page" data-theme="a">Map</a></li>
+                    <li><a href="#media" data-theme="a">Media</a></li>
+                </ul>
+            </nav>
+            
+            <div data-role="content" class="content">
+                
+                <p>
+               <div id="accelerometer">Waiting for accelerometer...</div>
+                </p>
+                
+            </div> <!-- end of cta-div -->
+            
+            
+            <footer data-role="footer" id="footer" data-position="fixed">
+                
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#">App Info</a></li>
+                        <li><a href="#">Map</a></li>
+                        <li><a href="#myLikes">My Likes</a></li>
+                    </ul>
+                </div> <!-- end of footer navbar div -->
+                
+            </footer>
+            
+        </section> 
+        
+        <!-- end of gallery section -->
+        
+        <!-- beginning of map section -->
+        
+        <section id="map-page" data-role="page" data-position="fixed" data-add-back-btn="true">
+            
+            <header data-role="header" id="header" data-theme="c" align="center" data-add-back-btn="true">
+                <img src="images/home_logo.png" id="logo"><br />
+                    Maps
+                    </header>
+            
+            <nav data-role="navbar" id="navbar">
+                <ul>
+                    <li><a href="#home" data-theme="a">Home</a></li>
+                    <li><a href="#gallery" data-theme="a">Gallery</a></li>
+                    <li><a href="#map-page" data-theme="a" class="ui-btn-active">Map</a></li>
+                    <li><a href="#media" data-theme="a">Media</a></li>
+                </ul>
+            </nav>
+            
+            <div data-role="content">
+                <div id="map_canvas">
+                     
+                
+            </div> <!-- end of content-div -->
+            
+            
+            <footer data-role="footer" id="footer" data-position="fixed">
+                
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#">App Info</a></li>
+                        <li><a href="#">Map</a></li>
+                        <li><a href="#myLikes">My Likes</a></li>
+                    </ul>
+                </div> <!-- end of footer navbar div -->
+                
+            </footer>        
+            
+        </section>
+        
+        <!-- end of map section -->
+        
+        <!-- beginning of media section -->
+        
+        <section id="media" data-role="page" data-position="fixed" data-add-back-btn="true">
+            
+            <header data-role="header" id="header" data-theme="c" align="center">
+                <img src="images/home_logo.png" id="logo"><br />
+                    Media
+                    </header>
+            
+            <nav data-role="navbar" id="navbar">
+                <ul>
+                    <li><a href="#home" data-theme="a">Home</a></li>
+                    <li><a href="#gallery" data-theme="a">Gallery</a></li>
+                    <li><a href="#map-page" data-theme="a">Map</a></li>
+                    <li><a href="#media" data-theme="a" class="ui-btn-active">Media</a></li>
+                </ul>
+            </nav>
+            
+            <div data-role="content" class="content">
+                
+                <div id="video-container">
+                    <video width="373" height="280" preload id="video" controls> 
+                        <!-- MP4 must be first for iPad! -->
+                        <source src="avfpt2.mp4" type="video/mp4"> <!-- Safari / iOS video -->
+                            <!--<source src="avfpt2.mp4.ogv" type="video/ogg"> Firefox / Opera / Chrome10 -->
+                            </video>
+                    <canvas id="canvasOverlay" width="373" height="280"></canvas>
+                    <div id="controls" class="hidden">
+                        <div id="playPause" class="paused" tabindex="1">Play/Pause</div>
+                        <div id="timer">00:00</div>
+                        <div id="muteUnmute" class="unmuted" tabindex="2">Mute/Unmute</div>
+                 </div><!-- #controls -->
+                    
+                </div> <!-- /#video-container -->
+                
+            </div> <!-- end of cta-div -->
+            
+            
+            <footer data-role="footer" id="footer" data-position="fixed">
+                
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#">App Info</a></li>
+                        <li><a href="#">Map</a></li>
+                        <li><a href="#myLikes">My Likes</a></li>
+                    </ul>
+                </div> <!-- end of footer navbar div -->
+                
+            </footer>        
+            
+        </section>
+        
+        <!-- end of media section -->
+        
+        <!-- beginning of My Info section -->
+        
+        <section id="myLikes" data-role="page" data-position="fixed" >
+            
+            <header data-role="header" id="header" data-theme="c" align="center">
+                <img src="images/home_logo.png" id="logo"><br />
+                    My Likes
+                    </header>
+            
+            <nav data-role="navbar" id="navbar">
+                <ul>
+                    <li><a href="#home" data-theme="a">Home</a></li>
+                    <li><a href="#gallery" data-theme="a">Gallery</a></li>
+                    <li><a href="#map-page" data-theme="a">Map</a></li>
+                    <li><a href="#media" data-theme="a">Media</a></li>
+                </ul>
+            </nav>
+            
+            <div data-role="content" class="content">
+                
+                <form action="" method="post" id="myform" data-transition="pop">
+		  			<h5>* Required Fields</h5>
+		  			<label for="likes" class="select"></label> 
+                    <select name="likes" id="likes" data-theme="b"> 
+                        <option selected value="select">--- Select Likes ---</option> 
+                        <option value="buy">Buy Home</option> 
+                        <option value="rent">Rent Home</option>
+                        <option value="condoBuy">Buy Condo</option>
+                        <option value="condoRent">Rent Condo</option>
+                        <option value="apartment">Apartments</option>
+                        <option value="lease">Lease Options</option>
+                    </select>
+                    <br />
+                    <label for="bedrooms" class="select"></label> 
+                    <select name="bedrooms" id="bedrooms" data-theme="b"> 
+                        <option selected value="select">--- Select Bedrooms ---</option> 
+                        <option value="one">1</option> 
+                        <option value="twoPlus">2+</option>
+                        <option value="threePlus">3+</option>
+                        <option value="fourPlus">4+</option>
+                        <option value="fivePlus">5+</option>
+                        <option value="sixPlus">6+</option>
+                    </select>
+                    <br />
+                    <label for="bathrooms" class="select"></label> 
+                    <select name="bathrooms" id="bathrooms" data-theme="b"> 
+                        <option selected value="select">--- Select Bathrooms ---</option> 
+                        <option value="one">1</option> 
+                        <option value="twoPlus">2+</option>
+                        <option value="threePlus">3+</option>
+                        <option value="fourPlus">4+</option>
+                        <option value="fivePlus">5+</option>
+                    </select>
+                    <br />
+                    <div class="demo">
+                        
+                        <p>
+                        <label for="amount">Price range:</label>
+                        <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;" />
+                        </p>
+                        
+                        <div id="slider-range"></div>
+                    
+                </form>				
+                
+            </div> <!-- end of content-div -->
+            
+            
+            <footer data-role="footer" id="footer" data-position="fixed">
+                
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#">App Info</a></li>
+                        <li><a href="#">Map</a></li>
+                        <li><a href="#myLikes" class="ui-btn-active">My Likes</a></li>
+                    </ul>
+                </div> <!-- end of footer navbar div -->
+                
+            </footer>
+            
+        </section>
+        
+        <!-- end of My Info section -->
+        
+        <!-- JavaScript under here -->
+        
+        
+        <script type="text/javascript" src="jquery/jquery.js"></script>
+        <script type="text/javascript" src="jquery/jquery.mobile-1.1.0.min.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script type="text/javascript" src="libs/jquery.ui.map.js"></script>
+        <script type="text/javascript" src="js/videoControls.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        
+    </body>
+</html>
